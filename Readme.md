@@ -75,3 +75,8 @@ Image Processing: Sharp
 ✅ Store processed images in AWS S3
 ✅ Add WebSocket for real-time status updates
 ✅ Support different image formats & resolutions
+
+
+
+POSTMAN COLLECTION :
+https://documenter.getpostman.com/view/19605791/2sAYdfpqm6
