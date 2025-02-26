@@ -76,7 +76,10 @@ Image Processing: Sharp
 ✅ Add WebSocket for real-time status updates
 ✅ Support different image formats & resolutions
 
-
+Webhook Triggered:
+![Screenshot (26)](https://github.com/user-attachments/assets/1f576ad0-800d-427d-9817-1b6b6108f591)
 
 POSTMAN COLLECTION :
 https://documenter.getpostman.com/view/19605791/2sAYdfpqm6
+
+
