@@ -3,6 +3,7 @@ import fs from "fs";
 import {Request} from "../models/Request.js";
 import {Product }from "../models/Product.js";
 import { imageQueue }  from "../config/redis.js";
+import { startWorker } from "../jobs/queue.js";
 
 export async function uploadCSV(req, res) {
     if (!req.file) return res.status(400).json({ error: "No file uploaded" });
@@ -31,7 +32,6 @@ export async function uploadCSV(req, res) {
                 status: "PENDING"
             });
 
-            // ✅ Add each image URL to the processing queue
             imageUrls.forEach((imageUrl) => {
                 imageQueue.add("processImage", {
                     productId: product.id,
